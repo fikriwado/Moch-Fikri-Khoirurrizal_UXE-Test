@@ -1,3 +1,4 @@
+// ---------------- Start Functional Slider ----------------
 const wrapSlider = document.querySelector('.wrapper-slider');
 const btnSlider = document.querySelectorAll('.btn-slider');
 const sliderItems = document.querySelector('.slider-items');
@@ -24,3 +25,35 @@ btnSlider.forEach(button => {
         else btnSlider[1].style.display = 'block';
     });
 });
+// ---------------- ./End Functional Slider ----------------
+
+
+// ---------------- Start Functional Collapse ----------------
+const btnCollapse = document.getElementById('collapse-footer');
+const contentCollapse = document.getElementById('content-collapse-footer');
+
+btnCollapse.addEventListener('click', (e) => {
+    e.preventDefault();
+    contentCollapse.classList.toggle('active');
+    btnCollapse.classList.toggle('active');
+
+    if (btnCollapse.innerHTML === 'Collapse all <i class="fa-solid fa-angle-up"></i>') {
+        btnCollapse.innerHTML = 'Show all <i class="fa-solid fa-angle-down"></i>';
+    } else {
+        btnCollapse.innerHTML = 'Collapse all <i class="fa-solid fa-angle-up"></i>';
+    }
+});
+// ---------------- ./End Functional Collapse ----------------
+
+
+// ---------------- ./End Functional Back To Top ----------------
+const rootElement = document.documentElement;
+const btnBackTop = document.querySelector('.back-to-top');
+
+btnBackTop.addEventListener('click', () => {
+    rootElement.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+// ---------------- ./End Functional Back To Top ----------------

@@ -237,12 +237,21 @@ header .logo {
 /* ---- ./End Slider ---- */
 
 
-/* ---- Start Collapse ---- */
-.collapse-section {
+/* ---- Start Footer ---- */
+footer {
     background-color: #D9D9D9;
     padding: 30px 0;
+    color: #333;
 }
 
+footer p {
+    font-weight: 700;
+    margin: 50px 0 0 0;
+}
+/* ---- ./End Footer ---- */
+
+
+/* ---- Start Collapse ---- */
 .collapse {
     line-height: 22px;
 }
@@ -250,9 +259,9 @@ header .logo {
 .collapse .collapse-content {
     overflow: hidden;
     max-height: 0;
-    -webkit-transition: max-height .2s;
-    -o-transition: max-height .2s;
-    transition: max-height .2s;
+    -webkit-transition: max-height 1s;
+    -o-transition: max-height 1s;
+    transition: max-height 1s;
 }
 
 .collapse .collapse-content.active {
@@ -264,6 +273,9 @@ header .logo {
     color: #0095DA;
     text-decoration: none;
     font-weight: 700;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
 }
 
 .collapse .btn-collapse.active {
@@ -308,16 +320,6 @@ header .logo {
     }
 }
 /* ---- ./End Back To Top ---- */
-
-
-/* ---- Start Footer ---- */
-footer {
-    background-color: #D9D9D9;
-    padding: 50px 0 30px 0;
-    font-weight: 700;
-    color: #333;
-}
-/* ---- ./End Footer ---- */
 
 
 /* ---- Start Aligment ---- */
