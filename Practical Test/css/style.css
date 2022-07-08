@@ -11,14 +11,28 @@ body {
     font-size: 14px;
 } 
 
+
+/* ---- Start Container ---- */
 .container {
     width: 100%;
     padding: 0 12px;
 }
 
-/* -------------- */
-/* --- Header --- */
-/* -------------- */
+@media (min-width: 992px) {
+    .container { width: 960px; }
+}
+
+@media (min-width: 1200px) {
+    .container { width: 1140px; }
+}
+
+@media (min-width: 1400px) {
+    .container { width: 1320px; }
+}
+/* ---- ./End Container ---- */
+
+
+/* ---- Start Header ---- */
 header {
     background-color: #0095DA;
     padding: 12px 0;
@@ -29,9 +43,16 @@ header .logo {
     height: 40px;
 }
 
-/* -------------- */
-/* --- Flexbox -- */
-/* -------------- */
+
+@media (min-width: 992px) {
+    header {
+        text-align: left;
+    }
+}
+/* ---- ./End Header ---- */
+
+
+/* ---- Start Flexbox ---- */
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -47,25 +68,23 @@ header .logo {
     margin-bottom: 24px;
 }
 
-.order-1 {
-    order: 1;
-}
+.order-1 { order: 1; }
+.order-2 { order: 2; }
+.order-3 { order: 3; }
+.order-4 { order: 4; }
 
-.order-2 {
-    order: 2;
-}
 
-.order-3 {
-    order: 3;
+@media (min-width: 992px) {
+    .col-2 { width: calc(50% - 12px); }
+    .order-lg-1 { order: 1; }
+    .order-lg-2 { order: 2; }
+    .order-lg-3 { order: 3; }
+    .order-lg-4 { order: 4; }
 }
+/* ---- ./End Flexbox ---- */
 
-.order-4 {
-    order: 4;
-}
 
-/* -------------- */
-/* ---- Card ---- */
-/* -------------- */
+/* ---- Start Card ---- */
 .card {
     width: 132px;
     border-radius: 12px;
@@ -95,9 +114,16 @@ header .logo {
     margin-bottom: 7px;
 }
 
-/* -------------- */
-/* --- Button --- */
-/* -------------- */
+@media (min-width: 992px) {
+    .card {
+        width: 182px;
+        padding-bottom: 4px;
+    }
+}
+/* ---- ./End Card ---- */
+
+
+/* ---- Start Button ---- */
 .btn {
     display: inline-block;
     text-align: center;
@@ -108,58 +134,39 @@ header .logo {
     transition: .2s;
 }
 
-.btn-block {
-    display: block;
-}
+.btn-block { display: block; }
 
 .btn-primary {
     color: white;
     background-color: #0095DA;
 }
 
-.btn-primary:hover {
-    background-color: #0885be;
-}
+.btn-primary:hover { background-color: #0885be; }
 
 .btn-white {
     color: #0095DA;
     background-color: white;
 }
 
-.btn-white:hover {
-    background-color: #f4f6f8;
-}
+.btn-white:hover { background-color: #f4f6f8; }
 
-/* -------------- */
-/* -- Box Index - */
-/* -------------- */
-.box {
-    padding: 60px 0;
+@media (min-width: 992px) {
+    .btn { padding: 4px 10px; }
 }
+/* ---- ./End Button ---- */
 
-.box h1 {
-    font-size: 5rem;
-}
 
-.box-1 {
-    background-color: #DBFB15;
-}
+/* ---- Start Box Index & Color Section ---- */
+.box { padding: 60px 0; }
+.box h1 { font-size: 5rem; }
+.box-1 { background-color: #DBFB15; }
+.box-2 { background-color: #2BF2FE; }
+.box-3 { background-color: #F474FF; }
+.box-4 { background-color: #FF8A8A; }
+/* ---- ./End Box Index & Color Section ---- */
 
-.box-2 {
-    background-color: #2BF2FE;
-}
 
-.box-3 {
-    background-color: #F474FF;
-}
-
-.box-4 {
-    background-color: #FF8A8A;
-}
-
-/* --------------- */
-/* ---- Slider --- */
-/* --------------- */
+/* ---- Start Slider ---- */
 .wrapper-slider {
     position: relative;
     align-items: center;
@@ -199,10 +206,10 @@ header .logo {
 .wrapper-slider .btn-slider.next {
     right: 0;
 }
+/* ---- ./End Slider ---- */
 
-/* -------------- */
-/* -- Collapse -- */
-/* -------------- */
+
+/* ---- Start Collapse ---- */
 .collapse-section {
     background-color: #D9D9D9;
     padding: 30px 0;
@@ -232,10 +239,10 @@ header .logo {
 .collapse .btn-collapse.active {
     margin-top: 15px;
 }
+/* ---- ./End Collapse ---- */
 
-/* -------------- */
-/* - Back To Top */
-/* -------------- */
+
+/* ---- Start Back To Top ---- */
 .back-to-top {
     width: 50px;
     height: 50px;
@@ -258,118 +265,7 @@ header .logo {
     opacity: 1;
 }
 
-/* -------------- */
-/* --- Footer --- */
-/* -------------- */
-footer {
-    background-color: #D9D9D9;
-    padding: 50px 0 30px 0;
-    font-weight: 700;
-    color: #333;
-}
-
-/* -------------- */
-/* -- Alignment - */
-/* -------------- */
-.text-start {
-    text-align: left;
-}
-
-.text-center {
-    text-align: center;
-}
-
-/* -------------- */
-/* -- Spacing --- */
-/* -------------- */
-.mb-0 {
-    margin-bottom: 0;
-}
-
-.me-3 {
-    margin-right: 15px;
-}
-
-.mt-3 {
-    margin-top: 15px;
-}
-
-.mb-3 {
-    margin-bottom: 15px;
-}
-
-.me-4 {
-    margin-right: 20px;
-}
-
-.mt-5 {
-    margin-top: 25px;
-}
-
-.m-auto {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* -------------- */
-/* Desktop Screen */
-/* -------------- */
 @media (min-width: 992px) {
-    .container {
-        width: 960px;
-    }
-
-    /* -------------- */
-    /* --- Header --- */
-    /* -------------- */
-    header {
-        text-align: left;
-    }
-
-    /* -------------- */
-    /* --- Flexbox -- */
-    /* -------------- */
-    .order-lg-1 {
-        order: 1;
-    }
-    
-    .order-lg-2 {
-        order: 2;
-    }
-    
-    .order-lg-3 {
-        order: 3;
-    }
-    
-    .order-lg-4 {
-        order: 4;
-    }
-
-    /* -------------- */
-    /* ---- Card ---- */
-    /* -------------- */
-    .card {
-        width: 182px;
-        padding-bottom: 4px;
-    }
-    
-    /* -------------- */
-    /* --- Button --- */
-    /* -------------- */
-    .btn {
-        padding: 4px 10px;
-    }
-
-    /* -------------- */
-    /* --- Flexbox -- */
-    /* -------------- */
-    .col-2 {
-        width: calc(50% - 12px);
-    }
-
-    /* -------------- */
-    /* - Back To Top */
-    /* -------------- */
     .back-to-top {
         width: 60px;
         height: 60px;
@@ -378,23 +274,40 @@ footer {
         right: 40px;
         bottom: 40px;
     }
+}
+/* ---- ./End Back To Top ---- */
 
-    /* -------------- */
-    /* -- Spacing --- */
-    /* -------------- */
-    .mb-lg-0 {
-        margin-bottom: 0;
-    }
+
+/* ---- Start Footer ---- */
+footer {
+    background-color: #D9D9D9;
+    padding: 50px 0 30px 0;
+    font-weight: 700;
+    color: #333;
+}
+/* ---- ./End Footer ---- */
+
+
+/* ---- Start Aligment ---- */
+.text-start { text-align: left; }
+.text-center { text-align: center; }
+/* ---- ./End Aligment ---- */
+
+
+/* ---- Start Spacing ---- */
+.mb-0 { margin-bottom: 0; }
+.me-3 { margin-right: 15px; }
+.mt-3 { margin-top: 15px; }
+.mb-3 { margin-bottom: 15px; }
+.me-4 { margin-right: 20px; }
+.mt-5 { margin-top: 25px; }
+
+.m-auto {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-@media (min-width: 1200px) {
-    .container {
-        width: 1140px;
-    }
+@media (min-width: 992px) {
+    .mb-lg-0 { margin-bottom: 0; }
 }
-
-@media (min-width: 1400px) {
-    .container {
-        width: 1320px;
-    }
-}
+/* ---- ./End Spacing ---- */
