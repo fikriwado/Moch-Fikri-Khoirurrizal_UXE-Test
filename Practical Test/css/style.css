@@ -61,10 +61,6 @@ header .logo {
     order: 4;
 }
 
-.order-5 {
-    order: 5;
-}
-
 /* -------------- */
 /* ---- Card ---- */
 /* -------------- */
@@ -279,10 +275,6 @@ header .logo {
     
     .order-lg-4 {
         order: 4;
-    }
-    
-    .order-lg-5 {
-        order: 5;
     }
 
     /* -------------- */
