@@ -19,6 +19,12 @@ body {
 /* -------------- */
 header {
     background-color: #0095DA;
+    padding: 12px 0;
+    text-align: center;
+}
+
+header .logo {
+    height: 40px;
 }
 
 /* -------------- */
@@ -179,6 +185,13 @@ header {
 @media (min-width: 992px) {
     .container {
         width: 960px;
+    }
+
+    /* -------------- */
+    /* --- Header --- */
+    /* -------------- */
+    header {
+        text-align: left;
     }
 
     /* -------------- */
